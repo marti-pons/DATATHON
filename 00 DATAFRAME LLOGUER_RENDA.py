@@ -35,5 +35,3 @@ del LLOGUER_RENDA["Preu"]
 del LLOGUER_RENDA["Import_€_Mes"]
 
 print(LLOGUER_RENDA["Lloguer/Renda"].mean())
-
-LLOGUER_RENDA
