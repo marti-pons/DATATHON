@@ -17,3 +17,5 @@ for i in range(2015, 2019):
     rendes.append(r)
 
 RENDA = pd.concat(rendes)
+
+LLOGUER_RENDA = LLOGUER.merge(RENDA,on=["Any", "Codi_Districte", "Nom_Districte", "Codi_Barri", "Nom_Barri"])
