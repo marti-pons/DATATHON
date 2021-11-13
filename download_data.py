@@ -8,6 +8,7 @@ for i in range(2014, 2022):
     lloguers.append(ll)
 
 LLOGUER = pd.concat(lloguers)
+del LLOGUER["Lloguer_mitja"]
 
 rendes = []
 for i in range(2015, 2019):
