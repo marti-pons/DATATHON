@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Podré viure a Barcelona?</title>
+
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+
+
+    <link rel="stylesheet" href="rSlider.css">
+    <script src="rSlider.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+    <h1>Podré viure a Barcelona?</h1>
+
+    <form>
+        <div class="row">
+            <div id="salari-input">
+                <label for="salari">Renta per llar (€/mes): </label>
+                <input type="number" id="salari" value="2000" min="1">
+            </div>
+
+            <div id="any-input">
+                <input type="text" id="any">
+            </div>
+        </div>
+    </form>
+
+    <div id="mapa">
+    </div>
+
+    <p>Les dades barris de la Marina del Prat Vermell, la Clota, Can Peguera, Vallbona, i Baró de Viver, poden ser altament imprecises degut a la insuficiència de dades.</p>
+
+    <script src="pred_lloguers.js"></script>
+    <script src="geo_barris.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
