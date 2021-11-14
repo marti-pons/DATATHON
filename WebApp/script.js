@@ -141,7 +141,7 @@ function sliderChange(value) {
 
 let mySlider = new rSlider({
     target: '#any',
-    values: [2022, 2023, 2024, 2025, 2026],
+    values:  [2021, 2022, 2023, 2024, 2025, 2026],
     tooltip: false,
     labels: true,
     set: [2021],
@@ -155,8 +155,8 @@ function actualitzar_diferencia() {
 
     for (let i = 0; i < 73; ++i) {
         let pred_lloguer = lloguersPreds[i];
-        barris.features[i].properties.predLloguer = pred_lloguer[32 + 4 * (any - 2022) - 1];
-        barris.features[i].properties.diferencia = pred_lloguer[32 + 4 * (any - 2022) - 1] / salari;
+        barris.features[i].properties.predLloguer = pred_lloguer[4 * (any - 2014) - 1];
+        barris.features[i].properties.diferencia = pred_lloguer[4 * (any - 2014) - 1] / salari;
     }
     restyleLayer();
 }
